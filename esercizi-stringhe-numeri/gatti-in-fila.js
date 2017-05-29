@@ -12,3 +12,12 @@
   Hint: Se vuoi usare l'arrotondamento ti consiglio di non usare Math.round (arrotonda all'intero superiore solo da .5 in su) ma utilizza Math.ceil (arrotonda sempre all'intero superiore).
   http://www.imparareaprogrammare.it
 */
+
+var cats = 44;
+var catsrow = 6;
+var row = cats / catsrow;
+var row2 = Math.ceil(row);
+var subtot = row2 * catsrow;
+var tot = subtot - cats;
+
+console.log(tot);

@@ -20,4 +20,4 @@ var row2 = Math.ceil(row);
 var subtot = row2 * catsrow;
 var tot = subtot - cats;
 
-console.log(tot);
+console.log(row2, tot);

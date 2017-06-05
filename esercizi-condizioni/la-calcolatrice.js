@@ -14,7 +14,6 @@
   Utilizza il costrutto Switch-Case mediante acquisizione di caratteri.
   http://www.imparareaprogrammare.it
 */
-
 var operation = 'media';
 
 switch (operation) {

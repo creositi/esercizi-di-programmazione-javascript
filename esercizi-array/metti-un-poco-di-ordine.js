@@ -6,3 +6,13 @@
   Prova ad ordinali in modo crescente.
   http://www.imparareaprogrammare.it
 */
+
+var array = [];
+for(i = 0; i < 10; i++) {
+array[i] = Math.floor( Math.random() * 10 );
+}
+
+function confronta(a,b) {
+    return a-b
+} 
+  console.log(array.sort(confronta));

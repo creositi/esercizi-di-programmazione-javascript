@@ -12,29 +12,33 @@
 */
 
 var arr = [];
+var arr2 = Math.floor(Math.random()*(10) + 1);
+
 var arr3 = [];
+var arr4 = Math.floor(Math.random()*(10) + 1);
 
 var operation = "addizione";
 var appoggio = 0;
 
-if (operation === "addizione")
-  appoggio = arr2 + arr4;
-else if (operation = "sottrazione")
-  appoggio = arr2 - arr4;
-else if (operation = "moltiplicazione")
-  appoggio = arr2 * arr4;
-else if (operation = "divisione")
-  appoggio = arr2 / arr4;
+
+
 
 for (i = 1; i <= 10; i++) {
-    var arr = Math.floor(Math.random() * (10)) + 1;
+    arr = Math.floor(Math.random() * (10)) + 1;
     console.log(`Primo array ${arr}`);
 }
 for (i = 1; i <= 10; i++) {
-    var arr3 = Math.floor(Math.random() * (10)) + 1;
+    arr3 = Math.floor(Math.random() * (10)) + 1;  
     console.log(`Secondo array ${arr3}`);
 }
 
-
+if (operation === "addizione")
+  appoggio = arr + arr3;
+else if (operation = "sottrazione")
+  appoggio = arr - arr3;
+else if (operation = "moltiplicazione")
+  appoggio = arr * arr3;
+else if (operation = "divisione")
+  appoggio = arr / arr3;
+  
 console.log(`Numero scelto da prima variabile ${arr} + Numero scelto da seconda variabile ${arr3} = ${appoggio}`);
-

@@ -5,17 +5,16 @@
   http://www.imparareaprogrammare.it
 */
 
-var tiri = 3;
-var dadoutente1 = Math.floor(Math.random() * (7 - 1)) + 1;
-var dadoutente2 = Math.floor(Math.random() * (7 - 1)) + 1;
-var utente1 = tiri * dadoutente1;
-var utente2 = tiri * dadoutente2;
+var tiri = 5;
+var utente1 = 0;
+var utente2 = 0;
 
-if (utente1 < utente2)
-    document.write("Ha vinto l'utente 2 <br />");
-else if (utente1 > utente2)
-    document.write("Ha vinto l'utente 1 <br />");
-else
-    document.write("Pareggio");
 
-document.write(`L'utente 1 ha totalizzato ${utente1} punti. Mentre l'utente 2 ha totalizzato ${utente2} punti.`);
+for (i = 0; i < tiri; i++) {
+    var dadoutente1 = Math.floor(Math.random() * (6)) + 1;
+    var dadoutente2 = Math.floor(Math.random() * (6)) + 1;
+    utente1 = utente1 + dadoutente1;
+    utente2 = utente2 + dadoutente2;
+}
+document.write(`Punteggio utente 1: ${utente1}<br />`);
+document.write(`Punteggio utente 2: ${utente2}<br />`);

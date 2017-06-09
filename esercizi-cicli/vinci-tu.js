@@ -4,7 +4,6 @@
   Stampa il vincitore che ha totalizza più punti.
   http://www.imparareaprogrammare.it
 */
-
 var tiri = 5;
 var utente1 = 0;
 var utente2 = 0;
@@ -16,5 +15,11 @@ for (i = 0; i < tiri; i++) {
     utente1 = utente1 + dadoutente1;
     utente2 = utente2 + dadoutente2;
 }
+
+if (utente1 < utente2)
+    document.write(`Ha vinto utente 2 con ${utente2} punti<br />`);
+if (utente2 < utente1)
+    document.write(`Ha vinto utente 1 con ${utente1} punti<br />`);
+
 document.write(`Punteggio utente 1: ${utente1}<br />`);
 document.write(`Punteggio utente 2: ${utente2}<br />`);

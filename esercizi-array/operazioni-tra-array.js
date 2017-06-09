@@ -11,11 +11,11 @@
   http://www.imparareaprogrammare.it
 */
 
-var arr = new Array (1,2,3,4,5,6,7,8,9,10);
-var arr2 = Math.floor(Math.random()*(arr.length));
+var arr = [];
+var arr2 = Math.floor(Math.random()*(10) + 1);
 
-var arr3 = new Array (1,2,3,4,5,6,7,8,9,10);
-var arr4 = Math.floor(Math.random()*(arr3.length));
+var arr3 = [];
+var arr4 = Math.floor(Math.random()*(10) + 1);
 
 var operation = "addizione";
 var appoggio = 0;
@@ -29,4 +29,15 @@ else if (operation = "moltiplicazione")
 else if (operation = "divisione")
   appoggio = arr2 / arr4;
 
-console.log(`${arr2} + ${arr4} = ${appoggio}`);
+for (i = 1; i <= 10; i++) {
+    var arr = Math.floor(Math.random() * (10)) + 1;
+    console.log(`Primo array ${arr}`);
+}
+for (i = 1; i <= 10; i++) {
+    var arr3 = Math.floor(Math.random() * (10)) + 1;
+    console.log(`Secondo array ${arr3}`);
+}
+
+
+console.log(`Numero scelto da prima variabile ${arr} + Numero scelto da seconda variabile ${arr3} = ${appoggio}`);
+

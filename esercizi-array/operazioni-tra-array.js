@@ -10,3 +10,23 @@
   Hint: Per generare un numero casuale utlizza la funzione javascript random, che restituisce un intervallo compreso tra 0 e 1 che necessita di essere convertito per il tuo intervallo.
   http://www.imparareaprogrammare.it
 */
+
+var arr = new Array (1,2,3,4,5,6,7,8,9,10);
+var arr2 = Math.floor(Math.random()*(arr.length));
+
+var arr3 = new Array (1,2,3,4,5,6,7,8,9,10);
+var arr4 = Math.floor(Math.random()*(arr3.length));
+
+var operation = "addizione";
+var appoggio = 0;
+
+if (operation === "addizione")
+  appoggio = arr2 + arr4;
+else if (operation = "sottrazione")
+  appoggio = arr2 - arr4;
+else if (operation = "moltiplicazione")
+  appoggio = arr2 * arr4;
+else if (operation = "divisione")
+  appoggio = arr2 / arr4;
+
+console.log(`${arr2} + ${arr4} = ${appoggio}`);

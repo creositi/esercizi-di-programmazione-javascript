@@ -12,10 +12,7 @@
 */
 
 var arr = [];
-var arr2 = Math.floor(Math.random()*(10) + 1);
-
 var arr3 = [];
-var arr4 = Math.floor(Math.random()*(10) + 1);
 
 var operation = "addizione";
 var appoggio = 0;

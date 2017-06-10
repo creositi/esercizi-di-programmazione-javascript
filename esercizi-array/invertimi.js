@@ -6,3 +6,18 @@
   Non utilizzare array di appoggio per inversione.
   http://www.imparareaprogrammare.it
 */
+
+*/
+var arr = [];
+
+for(i = 0; i < 5; i++) {
+    arr[i] = Math.floor( Math.random() * 5 );
+    var arr2 = arr[i];
+    arr3 = arr2;
+}
+
+    console.log(arr);
+
+    arr.reverse();
+
+    console.log(arr);
